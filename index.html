@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <header>header</header>
+  <body>
+    <div class="taskContainer">
+      <div class="currentTaskContainer">
+        <div class="currentTask">
+          <ul>
+            <li>Task Name</li>
+            <li>Due Date</li>
+            <li>Urgency</li>
+          </ul>
+          <div class="taskCompleteButton">Task Complete</div>
+        </div>
+      </div>
+      <div class="newTaskContainer">
+        <label for="taskName">Task Name</label>
+        <input type="text" id="taskNameInput" /> <br />
+
+        <label for="dueDateInput">Due Date</label>
+        <input type="date" id="dueDateInput" /> <br />
+
+        <label for="urgency">Urgency</label>
+        <input type="number" id="urgencyInput" min="1" max="10" /> <br />
+
+        <button id="submitButton">Submit</button>
+      </div>
+    </div>
+    <script src="./app/main.js" type="module"></script>
+  </body>
+</html>
